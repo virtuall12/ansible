@@ -2,6 +2,7 @@
 - name: test
   host: all
   become: true
+
   task: 
     - name: httpd
       yum:
