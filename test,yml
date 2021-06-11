@@ -1,1 +1,9 @@
 ---
+- name: tset
+  host: all
+  become: true
+  task: 
+    - name: httpd
+      yum:
+        name: httpd
+        state: present
