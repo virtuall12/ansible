@@ -1,0 +1,10 @@
+---
+- name: ansible
+  hosts: all
+  become: true
+  
+  tasks:
+    - name: httpd
+      yum:
+        name: httpd
+        state: present
